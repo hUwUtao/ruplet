@@ -12,7 +12,7 @@ int main() {
 
   while (read(0, buf, sizeof(buf)) > 0) {
     char toc = buf[0], ck = key[ol % kl];
-    toc = toc ^ loc ^ ck;
+    toc = ck ^ loc ^ toc;
     putchar(toc);
     ol++;
   }
