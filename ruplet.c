@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 int main() {
-  unsigned char buf[2], obuf[1024], loc;
+  unsigned char buf[1], obuf[1024], loc;
 
   char *key = "this is encryption key";
   unsigned int kl = strlen(key), ol = 1;
